@@ -1,0 +1,14 @@
+plugin.tx_biereff_f1 {
+    view {
+        # cat=plugin.tx_biereff_f1/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:biere_ff/Resources/Private/Templates/
+        # cat=plugin.tx_biereff_f1/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:biere_ff/Resources/Private/Partials/
+        # cat=plugin.tx_biereff_f1/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:biere_ff/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_biereff_f1//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}
