@@ -1,0 +1,26 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-biere-ff">
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_biere.name" /></td>
+		<td>{biere.name}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_biere.picture" /></td>
+		<td>
+				<f:image src="{biere.picture.originalResource.publicUrl}" width="200"/>
+            </td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_biere.taste" /></td>
+		<td>{biere.taste}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_biere.description" /></td>
+		<td>{biere.description}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_biere.degree" /></td>
+		<td>{biere.degree}</td>
+	</tr>
+</table>
+</html>

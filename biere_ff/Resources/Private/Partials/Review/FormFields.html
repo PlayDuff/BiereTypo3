@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<label for="content">
+	<f:translate key="tx_biereff_domain_model_review.content" />
+</label><br />
+	<f:form.textarea property="content" id="content" cols="40" rows="15" /><br />
+<label for="note">
+	<f:translate key="tx_biereff_domain_model_review.note" />
+</label><br />
+	<f:form.textfield property="note" id="note" /><br />
+<label for="user">
+	<f:translate key="tx_biereff_domain_model_review.user" />
+</label><br />
+	<f:form.textfield property="user" id="user" /><br />
+<label for="date">
+	<f:translate key="tx_biereff_domain_model_review.date" />
+</label><br />
+	<f:form.textfield property="date" id="date" value="{review.date->f:format.date()}" /><br />
+<label for="checked">
+	<f:translate key="tx_biereff_domain_model_review.checked" />
+</label><br />
+	<f:form.checkbox property="checked" id="checked" value="1" /><br />
+</html>

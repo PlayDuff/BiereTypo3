@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_db.xlf" date="2022-05-03T14:36:07Z" product-name="biere_ff">
+	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_db.xlf" date="2022-05-03T16:00:35Z" product-name="biere_ff">
 		<header/>
 		<body>
 			<trans-unit id="tx_biereff_domain_model_biere" resname="tx_biereff_domain_model_biere">
@@ -9,14 +9,8 @@
 			<trans-unit id="tx_biereff_domain_model_biere.name" resname="tx_biereff_domain_model_biere.name">
 				<source>Name</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.image" resname="tx_biereff_domain_model_biere.image">
-				<source>Image</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.brand" resname="tx_biereff_domain_model_biere.brand">
-				<source>Brand</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.type" resname="tx_biereff_domain_model_biere.type">
-				<source>Type</source>
+			<trans-unit id="tx_biereff_domain_model_biere.picture" resname="tx_biereff_domain_model_biere.picture">
+				<source>Picture</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_biere.taste" resname="tx_biereff_domain_model_biere.taste">
 				<source>Taste</source>
@@ -27,14 +21,20 @@
 			<trans-unit id="tx_biereff_domain_model_biere.degree" resname="tx_biereff_domain_model_biere.degree">
 				<source>Degree</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.ingredients" resname="tx_biereff_domain_model_biere.ingredients">
-				<source>Ingredients</source>
+			<trans-unit id="tx_biereff_domain_model_biere.brand" resname="tx_biereff_domain_model_biere.brand">
+				<source>Brand</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_biere.type" resname="tx_biereff_domain_model_biere.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_biere.ingredient" resname="tx_biereff_domain_model_biere.ingredient">
+				<source>Ingredient</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_biere.country" resname="tx_biereff_domain_model_biere.country">
 				<source>Country</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.reviews" resname="tx_biereff_domain_model_biere.reviews">
-				<source>Reviews</source>
+			<trans-unit id="tx_biereff_domain_model_biere.review" resname="tx_biereff_domain_model_biere.review">
+				<source>Review</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_type" resname="tx_biereff_domain_model_type">
 				<source>Type</source>
@@ -46,6 +46,12 @@
 				<source>Ingredient</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_ingredient.name" resname="tx_biereff_domain_model_ingredient.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_country" resname="tx_biereff_domain_model_country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_country.name" resname="tx_biereff_domain_model_country.name">
 				<source>Name</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_review" resname="tx_biereff_domain_model_review">
@@ -75,11 +81,17 @@
 			<trans-unit id="tx_biereff_domain_model_brand.logo" resname="tx_biereff_domain_model_brand.logo">
 				<source>Logo</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_country" resname="tx_biereff_domain_model_country">
-				<source>Country</source>
+			<trans-unit id="tx_biereff_domain_model_theme" resname="tx_biereff_domain_model_theme">
+				<source>Theme</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_country.name" resname="tx_biereff_domain_model_country.name">
-				<source>Name</source>
+			<trans-unit id="tx_biereff_domain_model_theme.titre" resname="tx_biereff_domain_model_theme.titre">
+				<source>Titre</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_theme.date_debut" resname="tx_biereff_domain_model_theme.date_debut">
+				<source>Date Debut</source>
+			</trans-unit>
+			<trans-unit id="tx_biereff_domain_model_theme.date_fin" resname="tx_biereff_domain_model_theme.date_fin">
+				<source>Date Fin</source>
 			</trans-unit>
 		</body>
 	</file>

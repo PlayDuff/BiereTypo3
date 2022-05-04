@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_theme.xlf" date="2022-05-03T16:00:35Z" product-name="biere_ff">
+		<header/>
+		<body>
+			<trans-unit id="titre.description" resname="titre.description">
+				<source>titre</source>
+			</trans-unit>
+			<trans-unit id="date_debut.description" resname="date_debut.description">
+				<source>dateDebut</source>
+			</trans-unit>
+			<trans-unit id="date_fin.description" resname="date_fin.description">
+				<source>dateFin</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

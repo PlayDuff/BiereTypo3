@@ -1,14 +1,14 @@
-plugin.tx_biereff_f1 {
+plugin.tx_biereff_biere1 {
     view {
         templateRootPaths.0 = EXT:biere_ff/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_biereff_f1.view.templateRootPath}
+        templateRootPaths.1 = {$plugin.tx_biereff_biere1.view.templateRootPath}
         partialRootPaths.0 = EXT:biere_ff/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_biereff_f1.view.partialRootPath}
+        partialRootPaths.1 = {$plugin.tx_biereff_biere1.view.partialRootPath}
         layoutRootPaths.0 = EXT:biere_ff/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_biereff_f1.view.layoutRootPath}
+        layoutRootPaths.1 = {$plugin.tx_biereff_biere1.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_biereff_f1.persistence.storagePid}
+        storagePid = {$plugin.tx_biereff_biere1.persistence.storagePid}
         #recursive = 1
     }
     features {

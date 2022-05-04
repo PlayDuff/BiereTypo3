@@ -1,37 +1,43 @@
 CREATE TABLE tx_biereff_domain_model_biere (
-	name int(11) unsigned DEFAULT '0',
-	image int(11) unsigned DEFAULT '0',
+	name varchar(255) NOT NULL DEFAULT '',
+	picture int(11) unsigned NOT NULL DEFAULT '0',
+	taste text,
+	description text,
+	degree int(11) NOT NULL DEFAULT '0',
 	brand int(11) unsigned DEFAULT '0',
 	type int(11) unsigned DEFAULT '0',
-	taste int(11) unsigned DEFAULT '0',
-	description int(11) unsigned DEFAULT '0',
-	degree int(11) unsigned DEFAULT '0',
-	ingredients int(11) unsigned DEFAULT '0',
+	ingredient int(11) unsigned DEFAULT '0',
 	country int(11) unsigned DEFAULT '0',
-	reviews int(11) unsigned DEFAULT '0'
+	review int(11) unsigned DEFAULT '0'
 );
 
 CREATE TABLE tx_biereff_domain_model_type (
-	description int(11) unsigned DEFAULT '0'
+	description text
 );
 
 CREATE TABLE tx_biereff_domain_model_ingredient (
-	name int(11) unsigned DEFAULT '0'
-);
-
-CREATE TABLE tx_biereff_domain_model_review (
-	content int(11) unsigned DEFAULT '0',
-	note int(11) unsigned DEFAULT '0',
-	user int(11) unsigned DEFAULT '0',
-	date int(11) unsigned DEFAULT '0',
-	checked int(11) unsigned DEFAULT '0'
-);
-
-CREATE TABLE tx_biereff_domain_model_brand (
-	name int(11) unsigned DEFAULT '0',
-	logo int(11) unsigned DEFAULT '0'
+	name varchar(255) NOT NULL DEFAULT ''
 );
 
 CREATE TABLE tx_biereff_domain_model_country (
-	name int(11) unsigned DEFAULT '0'
+	name varchar(255) NOT NULL DEFAULT ''
+);
+
+CREATE TABLE tx_biereff_domain_model_review (
+	content text,
+	note int(11) NOT NULL DEFAULT '0',
+	user varchar(255) NOT NULL DEFAULT '',
+	date datetime DEFAULT NULL,
+	checked smallint(1) unsigned NOT NULL DEFAULT '0'
+);
+
+CREATE TABLE tx_biereff_domain_model_brand (
+	name varchar(255) NOT NULL DEFAULT '',
+	logo int(11) unsigned NOT NULL DEFAULT '0'
+);
+
+CREATE TABLE tx_biereff_domain_model_theme (
+	titre varchar(255) NOT NULL DEFAULT '',
+	date_debut int(11) NOT NULL DEFAULT '0',
+	date_fin int(11) NOT NULL DEFAULT '0'
 );
