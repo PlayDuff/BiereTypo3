@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_db.xlf" date="2022-05-03T16:00:35Z" product-name="biere_ff">
+	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_db.xlf" date="2022-05-24T07:58:05Z" product-name="biere_ff">
 		<header/>
 		<body>
-			<trans-unit id="tx_biereff_domain_model_biere" resname="tx_biereff_domain_model_biere">
-				<source>Biere</source>
+			<trans-unit id="tx_biereff_domain_model_beer" resname="tx_biereff_domain_model_beer">
+				<source>Beer</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.name" resname="tx_biereff_domain_model_biere.name">
+			<trans-unit id="tx_biereff_domain_model_beer.name" resname="tx_biereff_domain_model_beer.name">
 				<source>Name</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.picture" resname="tx_biereff_domain_model_biere.picture">
-				<source>Picture</source>
+			<trans-unit id="tx_biereff_domain_model_beer.image" resname="tx_biereff_domain_model_beer.image">
+				<source>Image</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.taste" resname="tx_biereff_domain_model_biere.taste">
+			<trans-unit id="tx_biereff_domain_model_beer.taste" resname="tx_biereff_domain_model_beer.taste">
 				<source>Taste</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.description" resname="tx_biereff_domain_model_biere.description">
+			<trans-unit id="tx_biereff_domain_model_beer.description" resname="tx_biereff_domain_model_beer.description">
 				<source>Description</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.degree" resname="tx_biereff_domain_model_biere.degree">
+			<trans-unit id="tx_biereff_domain_model_beer.degree" resname="tx_biereff_domain_model_beer.degree">
 				<source>Degree</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.brand" resname="tx_biereff_domain_model_biere.brand">
+			<trans-unit id="tx_biereff_domain_model_beer.brand" resname="tx_biereff_domain_model_beer.brand">
 				<source>Brand</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.type" resname="tx_biereff_domain_model_biere.type">
+			<trans-unit id="tx_biereff_domain_model_beer.type" resname="tx_biereff_domain_model_beer.type">
 				<source>Type</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.ingredient" resname="tx_biereff_domain_model_biere.ingredient">
+			<trans-unit id="tx_biereff_domain_model_beer.ingredient" resname="tx_biereff_domain_model_beer.ingredient">
 				<source>Ingredient</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.country" resname="tx_biereff_domain_model_biere.country">
+			<trans-unit id="tx_biereff_domain_model_beer.country" resname="tx_biereff_domain_model_beer.country">
 				<source>Country</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_biere.review" resname="tx_biereff_domain_model_biere.review">
+			<trans-unit id="tx_biereff_domain_model_beer.review" resname="tx_biereff_domain_model_beer.review">
 				<source>Review</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_type" resname="tx_biereff_domain_model_type">
 				<source>Type</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_type.description" resname="tx_biereff_domain_model_type.description">
-				<source>Description</source>
+			<trans-unit id="tx_biereff_domain_model_type.type" resname="tx_biereff_domain_model_type.type">
+				<source>Type</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_ingredient" resname="tx_biereff_domain_model_ingredient">
 				<source>Ingredient</source>
@@ -69,8 +69,8 @@
 			<trans-unit id="tx_biereff_domain_model_review.date" resname="tx_biereff_domain_model_review.date">
 				<source>Date</source>
 			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_review.checked" resname="tx_biereff_domain_model_review.checked">
-				<source>Checked</source>
+			<trans-unit id="tx_biereff_domain_model_review.validity" resname="tx_biereff_domain_model_review.validity">
+				<source>Validity</source>
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_brand" resname="tx_biereff_domain_model_brand">
 				<source>Brand</source>
@@ -80,18 +80,6 @@
 			</trans-unit>
 			<trans-unit id="tx_biereff_domain_model_brand.logo" resname="tx_biereff_domain_model_brand.logo">
 				<source>Logo</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_theme" resname="tx_biereff_domain_model_theme">
-				<source>Theme</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_theme.titre" resname="tx_biereff_domain_model_theme.titre">
-				<source>Titre</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_theme.date_debut" resname="tx_biereff_domain_model_theme.date_debut">
-				<source>Date Debut</source>
-			</trans-unit>
-			<trans-unit id="tx_biereff_domain_model_theme.date_fin" resname="tx_biereff_domain_model_theme.date_fin">
-				<source>Date Fin</source>
 			</trans-unit>
 		</body>
 	</file>

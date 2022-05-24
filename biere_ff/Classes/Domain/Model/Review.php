@@ -11,7 +11,7 @@ namespace Biere\BiereFf\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2022 Florian Finot <flofinot2001@gmail.com>, IUT bdx
+ * (c) 2022 Florian <flofinot2001@gmail.com>, IUT Bordeaux
  */
 
 /**
@@ -49,11 +49,11 @@ class Review extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $date = null;
 
     /**
-     * checked
+     * validity
      *
      * @var bool
      */
-    protected $checked = false;
+    protected $validity = false;
 
     /**
      * Returns the content
@@ -140,33 +140,33 @@ class Review extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the checked
+     * Returns the validity
      *
      * @return bool
      */
-    public function getChecked()
+    public function getValidity()
     {
-        return $this->checked;
+        return $this->validity;
     }
 
     /**
-     * Sets the checked
+     * Sets the validity
      *
-     * @param bool $checked
+     * @param bool $validity
      * @return void
      */
-    public function setChecked(bool $checked)
+    public function setValidity(bool $validity)
     {
-        $this->checked = $checked;
+        $this->validity = $validity;
     }
 
     /**
-     * Returns the boolean state of checked
+     * Returns the boolean state of validity
      *
      * @return bool
      */
-    public function isChecked()
+    public function isValidity()
     {
-        return $this->checked;
+        return $this->validity;
     }
 }

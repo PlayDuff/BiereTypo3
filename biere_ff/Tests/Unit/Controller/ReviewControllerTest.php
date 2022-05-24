@@ -12,7 +12,7 @@ use TYPO3Fluid\Fluid\View\ViewInterface;
 /**
  * Test case
  *
- * @author Florian Finot <flofinot2001@gmail.com>
+ * @author Florian <flofinot2001@gmail.com>
  */
 class ReviewControllerTest extends UnitTestCase
 {

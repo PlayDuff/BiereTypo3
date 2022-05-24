@@ -2,9 +2,9 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Biere',
-    'description' => 'Liste de bières',
+    'description' => '',
     'category' => 'plugin',
-    'author' => 'Florian Finot',
+    'author' => 'Florian',
     'author_email' => 'flofinot2001@gmail.com',
     'state' => 'alpha',
     'clearCacheOnLoad' => 0,

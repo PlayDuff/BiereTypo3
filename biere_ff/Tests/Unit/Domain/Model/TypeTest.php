@@ -11,7 +11,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 /**
  * Test case
  *
- * @author Florian Finot <flofinot2001@gmail.com>
+ * @author Florian <flofinot2001@gmail.com>
  */
 class TypeTest extends UnitTestCase
 {
@@ -38,21 +38,21 @@ class TypeTest extends UnitTestCase
     /**
      * @test
      */
-    public function getDescriptionReturnsInitialValueForString(): void
+    public function getTypeReturnsInitialValueForString(): void
     {
         self::assertSame(
             '',
-            $this->subject->getDescription()
+            $this->subject->getType()
         );
     }
 
     /**
      * @test
      */
-    public function setDescriptionForStringSetsDescription(): void
+    public function setTypeForStringSetsType(): void
     {
-        $this->subject->setDescription('Conceived at T3CON10');
+        $this->subject->setType('Conceived at T3CON10');
 
-        self::assertEquals('Conceived at T3CON10', $this->subject->_get('description'));
+        self::assertEquals('Conceived at T3CON10', $this->subject->_get('type'));
     }
 }

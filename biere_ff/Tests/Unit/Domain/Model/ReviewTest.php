@@ -11,7 +11,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 /**
  * Test case
  *
- * @author Florian Finot <flofinot2001@gmail.com>
+ * @author Florian <flofinot2001@gmail.com>
  */
 class ReviewTest extends UnitTestCase
 {
@@ -123,18 +123,18 @@ class ReviewTest extends UnitTestCase
     /**
      * @test
      */
-    public function getCheckedReturnsInitialValueForBool(): void
+    public function getValidityReturnsInitialValueForBool(): void
     {
-        self::assertFalse($this->subject->getChecked());
+        self::assertFalse($this->subject->getValidity());
     }
 
     /**
      * @test
      */
-    public function setCheckedForBoolSetsChecked(): void
+    public function setValidityForBoolSetsValidity(): void
     {
-        $this->subject->setChecked(true);
+        $this->subject->setValidity(true);
 
-        self::assertEquals(true, $this->subject->_get('checked'));
+        self::assertEquals(true, $this->subject->_get('validity'));
     }
 }

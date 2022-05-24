@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_beer.xlf" date="2022-05-24T07:58:05Z" product-name="biere_ff">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="image.description" resname="image.description">
+				<source>image</source>
+			</trans-unit>
+			<trans-unit id="taste.description" resname="taste.description">
+				<source>taste</source>
+			</trans-unit>
+			<trans-unit id="description.description" resname="description.description">
+				<source>description</source>
+			</trans-unit>
+			<trans-unit id="degree.description" resname="degree.description">
+				<source>degree</source>
+			</trans-unit>
+			<trans-unit id="brand.description" resname="brand.description">
+				<source>brand</source>
+			</trans-unit>
+			<trans-unit id="type.description" resname="type.description">
+				<source>type</source>
+			</trans-unit>
+			<trans-unit id="ingredient.description" resname="ingredient.description">
+				<source>ingredient</source>
+			</trans-unit>
+			<trans-unit id="country.description" resname="country.description">
+				<source>country</source>
+			</trans-unit>
+			<trans-unit id="review.description" resname="review.description">
+				<source>review</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

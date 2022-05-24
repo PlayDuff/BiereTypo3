@@ -1,7 +1,7 @@
 <?php
 return [
     'ctrl' => [
-        'title' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere',
+        'title' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer',
         'label' => 'name',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,10 +17,10 @@ return [
             'endtime' => 'endtime',
         ],
         'searchFields' => 'name,taste,description',
-        'iconfile' => 'EXT:biere_ff/Resources/Public/Icons/tx_biereff_domain_model_biere.gif'
+        'iconfile' => 'EXT:biere_ff/Resources/Public/Icons/tx_biereff_domain_model_beer.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'name, picture, taste, description, degree, brand, type, ingredient, country, review, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'name, image, taste, description, degree, brand, type, ingredient, country, review, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -40,8 +40,8 @@ return [
                 'items' => [
                     ['', 0],
                 ],
-                'foreign_table' => 'tx_biereff_domain_model_biere',
-                'foreign_table_where' => 'AND {#tx_biereff_domain_model_biere}.{#pid}=###CURRENT_PID### AND {#tx_biereff_domain_model_biere}.{#sys_language_uid} IN (-1,0)',
+                'foreign_table' => 'tx_biereff_domain_model_beer',
+                'foreign_table_where' => 'AND {#tx_biereff_domain_model_beer}.{#pid}=###CURRENT_PID### AND {#tx_biereff_domain_model_beer}.{#sys_language_uid} IN (-1,0)',
             ],
         ],
         'l10n_diffsource' => [
@@ -96,19 +96,19 @@ return [
 
         'name' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.name',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.name',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim',
+                'eval' => 'trim,required',
                 'default' => ''
             ],
         ],
-        'picture' => [
+        'image' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.picture',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.image',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
-                'picture',
+                'image',
                 [
                     'appearance' => [
                         'createNewRelationLinkTitle' => 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference'
@@ -146,8 +146,8 @@ return [
                         ]
                     ],
                     'foreign_match_fields' => [
-                        'fieldname' => 'picture',
-                        'tablenames' => 'tx_biereff_domain_model_biere',
+                        'fieldname' => 'image',
+                        'tablenames' => 'tx_biereff_domain_model_beer',
                         'table_local' => 'sys_file',
                     ],
                     'maxitems' => 1
@@ -158,7 +158,7 @@ return [
         ],
         'taste' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.taste',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.taste',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -176,7 +176,7 @@ return [
         ],
         'description' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.description',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.description',
             'config' => [
                 'type' => 'text',
                 'enableRichtext' => true,
@@ -194,17 +194,16 @@ return [
         ],
         'degree' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.degree',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.degree',
             'config' => [
                 'type' => 'input',
-                'size' => 4,
-                'eval' => 'int',
-                'default' => 0
+                'size' => 30,
+                'eval' => 'double2'
             ]
         ],
         'brand' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.brand',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.brand',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -217,7 +216,7 @@ return [
         ],
         'type' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.type',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.type',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -230,7 +229,7 @@ return [
         ],
         'ingredient' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.ingredient',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.ingredient',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -243,7 +242,7 @@ return [
         ],
         'country' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.country',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.country',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -256,7 +255,7 @@ return [
         ],
         'review' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_biere.review',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_beer.review',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',

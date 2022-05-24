@@ -11,7 +11,7 @@ use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 /**
  * Test case
  *
- * @author Florian Finot <flofinot2001@gmail.com>
+ * @author Florian <flofinot2001@gmail.com>
  */
 class IngredientTest extends UnitTestCase
 {

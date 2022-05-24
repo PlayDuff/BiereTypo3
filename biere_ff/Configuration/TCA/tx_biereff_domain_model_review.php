@@ -20,7 +20,7 @@ return [
         'iconfile' => 'EXT:biere_ff/Resources/Public/Icons/tx_biereff_domain_model_review.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'content, note, user, date, checked, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'content, note, user, date, validity, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -144,9 +144,9 @@ return [
                 'default' => null,
             ],
         ],
-        'checked' => [
+        'validity' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_review.checked',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_review.validity',
             'config' => [
                 'type' => 'check',
                 'renderType' => 'checkboxToggle',

@@ -11,7 +11,7 @@ namespace Biere\BiereFf\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2022 Florian Finot <flofinot2001@gmail.com>, IUT bdx
+ * (c) 2022 Florian <flofinot2001@gmail.com>, IUT Bordeaux
  */
 
 /**
@@ -21,30 +21,30 @@ class Type extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
-     * description
+     * type
      *
      * @var string
      */
-    protected $description = '';
+    protected $type = '';
 
     /**
-     * Returns the description
+     * Returns the type
      *
      * @return string
      */
-    public function getDescription()
+    public function getType()
     {
-        return $this->description;
+        return $this->type;
     }
 
     /**
-     * Sets the description
+     * Sets the type
      *
-     * @param string $description
+     * @param string $type
      * @return void
      */
-    public function setDescription(string $description)
+    public function setType(string $type)
     {
-        $this->description = $description;
+        $this->type = $type;
     }
 }

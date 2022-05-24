@@ -11,29 +11,30 @@ namespace Biere\BiereFf\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2022 Florian Finot <flofinot2001@gmail.com>, IUT bdx
+ * (c) 2022 Florian <flofinot2001@gmail.com>, IUT Bordeaux
  */
 
 /**
- * Biere
+ * Beer
  */
-class Biere extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
+class Beer extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
 
     /**
      * name
      *
      * @var string
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $name = '';
 
     /**
-     * picture
+     * image
      *
      * @var \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * @TYPO3\CMS\Extbase\Annotation\ORM\Cascade("remove")
      */
-    protected $picture = null;
+    protected $image = null;
 
     /**
      * taste
@@ -52,9 +53,9 @@ class Biere extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * degree
      *
-     * @var int
+     * @var float
      */
-    protected $degree = 0;
+    protected $degree = 0.0;
 
     /**
      * brand
@@ -113,24 +114,24 @@ class Biere extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the picture
+     * Returns the image
      *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference
      */
-    public function getPicture()
+    public function getImage()
     {
-        return $this->picture;
+        return $this->image;
     }
 
     /**
-     * Sets the picture
+     * Sets the image
      *
-     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $picture
+     * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $image
      * @return void
      */
-    public function setPicture(\TYPO3\CMS\Extbase\Domain\Model\FileReference $picture)
+    public function setImage(\TYPO3\CMS\Extbase\Domain\Model\FileReference $image)
     {
-        $this->picture = $picture;
+        $this->image = $image;
     }
 
     /**
@@ -178,7 +179,7 @@ class Biere extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Returns the degree
      *
-     * @return int
+     * @return float
      */
     public function getDegree()
     {
@@ -188,10 +189,10 @@ class Biere extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     /**
      * Sets the degree
      *
-     * @param int $degree
+     * @param float $degree
      * @return void
      */
-    public function setDegree(int $degree)
+    public function setDegree(float $degree)
     {
         $this->degree = $degree;
     }

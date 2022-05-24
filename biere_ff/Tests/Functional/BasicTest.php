@@ -9,7 +9,7 @@ use TYPO3\TestingFramework\Core\Functional\FunctionalTestCase;
 /**
  * Test case
  *
- * @author Florian Finot <flofinot2001@gmail.com>
+ * @author Florian <flofinot2001@gmail.com>
  */
 class BasicTest extends FunctionalTestCase
 {

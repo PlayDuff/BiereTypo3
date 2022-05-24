@@ -2,7 +2,7 @@
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_type',
-        'label' => 'description',
+        'label' => 'type',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
         'cruser_id' => 'cruser_id',
@@ -16,11 +16,11 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'description',
+        'searchFields' => 'type',
         'iconfile' => 'EXT:biere_ff/Resources/Public/Icons/tx_biereff_domain_model_type.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'description, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'type, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language, sys_language_uid, l10n_parent, l10n_diffsource, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -94,23 +94,15 @@ return [
             ],
         ],
 
-        'description' => [
+        'type' => [
             'exclude' => true,
-            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_type.description',
+            'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_type.type',
             'config' => [
-                'type' => 'text',
-                'enableRichtext' => true,
-                'richtextConfiguration' => 'default',
-                'fieldControl' => [
-                    'fullScreenRichtext' => [
-                        'disabled' => false,
-                    ],
-                ],
-                'cols' => 40,
-                'rows' => 15,
+                'type' => 'input',
+                'size' => 30,
                 'eval' => 'trim',
+                'default' => ''
             ],
-            
         ],
     
     ],

@@ -3,8 +3,8 @@
         {
             "config": {
                 "position": [
-                    265,
-                    9.333335876464844
+                    276,
+                    26
                 ]
             },
             "name": "New Model Object",
@@ -17,11 +17,10 @@
                     "_default4_edit_update": false,
                     "_default5_delete": false,
                     "customActions": [
-                        "search",
-                        "focus"
+                        "search"
                     ]
                 },
-                "name": "Biere",
+                "name": "Beer",
                 "objectsettings": {
                     "addDeletedField": true,
                     "addHiddenField": true,
@@ -33,7 +32,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "538996204250"
+                    "uid": "477362672848"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -44,10 +43,10 @@
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
-                            "propertyIsRequired": false,
+                            "propertyIsRequired": true,
                             "propertyName": "name",
                             "propertyType": "String",
-                            "uid": "172274659978"
+                            "uid": "231322987566"
                         },
                         {
                             "allowedFileTypes": "",
@@ -57,9 +56,9 @@
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
-                            "propertyName": "picture",
+                            "propertyName": "image",
                             "propertyType": "Image",
-                            "uid": "805886268405"
+                            "uid": "337377754048"
                         },
                         {
                             "allowedFileTypes": "",
@@ -71,7 +70,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "taste",
                             "propertyType": "RichText",
-                            "uid": "209463109547"
+                            "uid": "1264513311060"
                         },
                         {
                             "allowedFileTypes": "",
@@ -83,7 +82,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "description",
                             "propertyType": "RichText",
-                            "uid": "845426787647"
+                            "uid": "1161897257959"
                         },
                         {
                             "allowedFileTypes": "",
@@ -94,8 +93,8 @@
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "degree",
-                            "propertyType": "Integer",
-                            "uid": "1042472937450"
+                            "propertyType": "Float",
+                            "uid": "972203689645"
                         }
                     ]
                 },
@@ -110,7 +109,7 @@
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "1550573848977"
+                            "uid": "618158368797"
                         },
                         {
                             "foreignRelationClass": "",
@@ -121,7 +120,7 @@
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "674834633913"
+                            "uid": "704302673694"
                         },
                         {
                             "foreignRelationClass": "",
@@ -132,7 +131,7 @@
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "968599885912"
+                            "uid": "1636586696216"
                         },
                         {
                             "foreignRelationClass": "",
@@ -143,7 +142,7 @@
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "750321640184"
+                            "uid": "1127435682180"
                         },
                         {
                             "foreignRelationClass": "",
@@ -154,7 +153,7 @@
                             "relationType": "zeroToOne",
                             "relationWire": "[wired]",
                             "renderType": "selectSingle",
-                            "uid": "286963378875"
+                            "uid": "1275397018819"
                         }
                     ]
                 }
@@ -163,8 +162,8 @@
         {
             "config": {
                 "position": [
-                    11,
-                    38.333335876464844
+                    19,
+                    69
                 ]
             },
             "name": "New Model Object",
@@ -190,7 +189,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "1145645842143"
+                    "uid": "133366257228"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -202,9 +201,9 @@
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
-                            "propertyName": "description",
-                            "propertyType": "RichText",
-                            "uid": "835114263869"
+                            "propertyName": "type",
+                            "propertyType": "String",
+                            "uid": "1600984413848"
                         }
                     ]
                 },
@@ -216,8 +215,8 @@
         {
             "config": {
                 "position": [
-                    11,
-                    219.33333587646484
+                    523,
+                    8
                 ]
             },
             "name": "New Model Object",
@@ -243,7 +242,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "1445288417532"
+                    "uid": "1221779224607"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -256,8 +255,8 @@
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "name",
-                            "propertyType": "String",
-                            "uid": "496169287317"
+                            "propertyType": "Text",
+                            "uid": "150851303455"
                         }
                     ]
                 },
@@ -269,8 +268,8 @@
         {
             "config": {
                 "position": [
-                    513,
-                    1.3333358764648438
+                    551,
+                    188
                 ]
             },
             "name": "New Model Object",
@@ -282,9 +281,7 @@
                     "_default3_new_create": false,
                     "_default4_edit_update": false,
                     "_default5_delete": false,
-                    "customActions": [
-                        "search"
-                    ]
+                    "customActions": []
                 },
                 "name": "Country",
                 "objectsettings": {
@@ -298,7 +295,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "793435584539"
+                    "uid": "42696065065"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -311,8 +308,8 @@
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
                             "propertyName": "name",
-                            "propertyType": "String",
-                            "uid": "771069695282"
+                            "propertyType": "Text",
+                            "uid": "1219497520472"
                         }
                     ]
                 },
@@ -324,8 +321,8 @@
         {
             "config": {
                 "position": [
-                    511,
-                    187.33333587646484
+                    508,
+                    353
                 ]
             },
             "name": "New Model Object",
@@ -351,7 +348,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "638313550849"
+                    "uid": "616379778312"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -365,7 +362,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "content",
                             "propertyType": "RichText",
-                            "uid": "117830057715"
+                            "uid": "771817965814"
                         },
                         {
                             "allowedFileTypes": "",
@@ -377,7 +374,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "note",
                             "propertyType": "Integer",
-                            "uid": "262631037552"
+                            "uid": "1431389789171"
                         },
                         {
                             "allowedFileTypes": "",
@@ -389,7 +386,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "user",
                             "propertyType": "String",
-                            "uid": "794320134404"
+                            "uid": "1152202102667"
                         },
                         {
                             "allowedFileTypes": "",
@@ -401,7 +398,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "date",
                             "propertyType": "NativeDateTime",
-                            "uid": "551419963134"
+                            "uid": "1503179503031"
                         },
                         {
                             "allowedFileTypes": "",
@@ -411,9 +408,9 @@
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
                             "propertyIsRequired": false,
-                            "propertyName": "checked",
+                            "propertyName": "validity",
                             "propertyType": "Boolean",
-                            "uid": "1400635191871"
+                            "uid": "1498155737632"
                         }
                     ]
                 },
@@ -425,15 +422,15 @@
         {
             "config": {
                 "position": [
-                    7,
-                    413.33333587646484
+                    276,
+                    321
                 ]
             },
             "name": "New Model Object",
             "value": {
                 "actionGroup": {
                     "_default0_index": false,
-                    "_default1_list": false,
+                    "_default1_list": true,
                     "_default2_show": false,
                     "_default3_new_create": false,
                     "_default4_edit_update": false,
@@ -452,7 +449,7 @@
                     "parentClass": "",
                     "sorting": false,
                     "type": "Entity",
-                    "uid": "1257494335332"
+                    "uid": "603577926853"
                 },
                 "propertyGroup": {
                     "properties": [
@@ -466,7 +463,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "name",
                             "propertyType": "String",
-                            "uid": "672283034338"
+                            "uid": "886635278247"
                         },
                         {
                             "allowedFileTypes": "",
@@ -478,84 +475,7 @@
                             "propertyIsRequired": false,
                             "propertyName": "logo",
                             "propertyType": "Image",
-                            "uid": "158569152953"
-                        }
-                    ]
-                },
-                "relationGroup": {
-                    "relations": []
-                }
-            }
-        },
-        {
-            "config": {
-                "position": [
-                    261,
-                    335.33333587646484
-                ]
-            },
-            "name": "New Model Object",
-            "value": {
-                "actionGroup": {
-                    "_default0_index": false,
-                    "_default1_list": false,
-                    "_default2_show": false,
-                    "_default3_new_create": false,
-                    "_default4_edit_update": false,
-                    "_default5_delete": false,
-                    "customActions": []
-                },
-                "name": "Theme",
-                "objectsettings": {
-                    "addDeletedField": true,
-                    "addHiddenField": true,
-                    "addStarttimeEndtimeFields": true,
-                    "aggregateRoot": false,
-                    "categorizable": false,
-                    "description": "",
-                    "mapToTable": "",
-                    "parentClass": "",
-                    "sorting": false,
-                    "type": "Entity",
-                    "uid": "378553332945"
-                },
-                "propertyGroup": {
-                    "properties": [
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsNullable": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "titre",
-                            "propertyType": "String",
-                            "uid": "1101238785480"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsNullable": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "dateDebut",
-                            "propertyType": "Date",
-                            "uid": "558951990729"
-                        },
-                        {
-                            "allowedFileTypes": "",
-                            "maxItems": "1",
-                            "propertyDescription": "",
-                            "propertyIsExcludeField": true,
-                            "propertyIsL10nModeExclude": false,
-                            "propertyIsNullable": false,
-                            "propertyIsRequired": false,
-                            "propertyName": "dateFin",
-                            "propertyType": "Date",
-                            "uid": "557190716698"
+                            "uid": "1185047115151"
                         }
                     ]
                 },
@@ -566,8 +486,19 @@
         }
     ],
     "properties": {
-        "backendModules": [],
-        "description": "Liste de bi\u00e8res",
+        "backendModules": [
+            {
+                "actions": {
+                    "controllerActionCombinations": ""
+                },
+                "description": "",
+                "key": "bk1",
+                "mainModule": "web",
+                "name": "Biere",
+                "tabLabel": ""
+            }
+        ],
+        "description": "",
         "emConf": {
             "category": "plugin",
             "custom_category": "",
@@ -584,24 +515,24 @@
         },
         "extensionKey": "biere_ff",
         "name": "Biere",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "biere_ff",
+        "originalVendorName": "Biere",
         "persons": [
             {
-                "company": "IUT bdx",
+                "company": "IUT Bordeaux",
                 "email": "flofinot2001@gmail.com",
-                "name": "Florian Finot",
+                "name": "Florian",
                 "role": "Developer"
             }
         ],
         "plugins": [
             {
                 "actions": {
-                    "controllerActionCombinations": "",
+                    "controllerActionCombinations": "Beer => list, show, search\nReview => create\nBrand => list",
                     "noncacheableActions": ""
                 },
-                "description": "description",
-                "key": "biere1",
+                "description": "",
+                "key": "fb1",
                 "name": "Biere"
             }
         ],
@@ -611,67 +542,67 @@
         {
             "src": {
                 "moduleId": 0,
-                "terminal": "relationWire_2",
-                "uid": "968599885912"
-            },
-            "tgt": {
-                "moduleId": 2,
-                "terminal": "SOURCES",
-                "uid": "1445288417532"
-            }
-        },
-        {
-            "src": {
-                "moduleId": 0,
-                "terminal": "relationWire_3",
-                "uid": "750321640184"
-            },
-            "tgt": {
-                "moduleId": 3,
-                "terminal": "SOURCES",
-                "uid": "793435584539"
-            }
-        },
-        {
-            "src": {
-                "moduleId": 0,
-                "terminal": "relationWire_4",
-                "uid": "286963378875"
-            },
-            "tgt": {
-                "moduleId": 4,
-                "terminal": "SOURCES",
-                "uid": "638313550849"
-            }
-        },
-        {
-            "src": {
-                "moduleId": 0,
                 "terminal": "relationWire_1",
-                "uid": "674834633913"
+                "uid": "704302673694"
             },
             "tgt": {
                 "moduleId": 1,
                 "terminal": "SOURCES",
-                "uid": "1145645842143"
+                "uid": "133366257228"
             }
         },
         {
             "src": {
                 "moduleId": 0,
                 "terminal": "relationWire_0",
-                "uid": "1550573848977"
+                "uid": "618158368797"
             },
             "tgt": {
                 "moduleId": 5,
                 "terminal": "SOURCES",
-                "uid": "1257494335332"
+                "uid": "603577926853"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_2",
+                "uid": "1636586696216"
+            },
+            "tgt": {
+                "moduleId": 2,
+                "terminal": "SOURCES",
+                "uid": "1221779224607"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_3",
+                "uid": "1127435682180"
+            },
+            "tgt": {
+                "moduleId": 3,
+                "terminal": "SOURCES",
+                "uid": "42696065065"
+            }
+        },
+        {
+            "src": {
+                "moduleId": 0,
+                "terminal": "relationWire_4",
+                "uid": "1275397018819"
+            },
+            "tgt": {
+                "moduleId": 4,
+                "terminal": "SOURCES",
+                "uid": "616379778312"
             }
         }
     ],
     "storagePath": "C:\/Users\/o-User-DawinAlt\/Desktop\/Cours\/CMS\/Proj2\/Biere\/packages\/",
     "log": {
-        "last_modified": "2022-05-03 04:00",
+        "last_modified": "2022-05-24 07:58",
         "extension_builder_version": "v11.0.2",
         "be_user": " (1)"
     }

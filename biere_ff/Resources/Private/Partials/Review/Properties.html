@@ -1,0 +1,24 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-biere-ff">
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_review.content" /></td>
+		<td>{review.content}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_review.note" /></td>
+		<td>{review.note}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_review.user" /></td>
+		<td>{review.user}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_review.date" /></td>
+		<td>{review.date -> f:format.date()}</td>
+	</tr>
+	<tr>
+		<td><f:translate key="tx_biereff_domain_model_review.validity" /></td>
+		<td>{review.validity}</td>
+	</tr>
+</table>
+</html>

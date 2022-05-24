@@ -2,8 +2,23 @@
 defined('TYPO3') || die();
 
 (static function() {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_biereff_domain_model_biere', 'EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_biere.xlf');
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_biereff_domain_model_biere');
+    \TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerModule(
+        'BiereFf',
+        'web',
+        'bk1',
+        '',
+        [
+            \Biere\BiereFf\Controller\BeerController::class => 'list, show, search',\Biere\BiereFf\Controller\ReviewController::class => 'new, create',\Biere\BiereFf\Controller\BrandController::class => 'list',
+        ],
+        [
+            'access' => 'user,group',
+            'icon'   => 'EXT:biere_ff/Resources/Public/Icons/user_mod_bk1.svg',
+            'labels' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_bk1.xlf',
+        ]
+    );
+
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_biereff_domain_model_beer', 'EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_beer.xlf');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_biereff_domain_model_beer');
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_biereff_domain_model_type', 'EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_type.xlf');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_biereff_domain_model_type');
@@ -19,7 +34,4 @@ defined('TYPO3') || die();
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_biereff_domain_model_brand', 'EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_brand.xlf');
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_biereff_domain_model_brand');
-
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addLLrefForTCAdescr('tx_biereff_domain_model_theme', 'EXT:biere_ff/Resources/Private/Language/locallang_csh_tx_biereff_domain_model_theme.xlf');
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::allowTableOnStandardPages('tx_biereff_domain_model_theme');
 })();

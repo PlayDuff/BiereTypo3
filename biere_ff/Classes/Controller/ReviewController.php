@@ -11,7 +11,7 @@ namespace Biere\BiereFf\Controller;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2022 Florian Finot <flofinot2001@gmail.com>, IUT bdx
+ * (c) 2022 Florian <flofinot2001@gmail.com>, IUT Bordeaux
  */
 
 /**

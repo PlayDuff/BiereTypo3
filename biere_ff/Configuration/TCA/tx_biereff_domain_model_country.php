@@ -98,11 +98,12 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:biere_ff/Resources/Private/Language/locallang_db.xlf:tx_biereff_domain_model_country.name',
             'config' => [
-                'type' => 'input',
-                'size' => 30,
+                'type' => 'text',
+                'cols' => 40,
+                'rows' => 15,
                 'eval' => 'trim',
                 'default' => ''
-            ],
+            ]
         ],
     
     ],
